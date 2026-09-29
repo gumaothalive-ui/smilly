@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smile For My Life 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="start-screen">
+    <video id="start-bg-video" autoplay muted loop playsinline>
+      <source src="lover.mp4" type="video/mp4" />
+    </video>
+    <button id="start-btn">Click to Begin 💖</button>
+  </div>
+
+  <canvas id="stars-canvas"></canvas>
+  <div class="petals" id="petals"></div>
+  <div id="yt-player" style="position:absolute;top:-9999px;left:-9999px;width:1px;height:1px;"></div>
+
+  <section id="hero">
+    <video id="bg-video" autoplay muted loop playsinline>
+      <source src="lover.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-vig"></div>
+    <div class="hero-inner">
+      <div class="hero-eyebrow">A cinematic tribute</div>
+      <h1 id="typewriter">Smile for My Life</h1>
+      <p class="hero-sub">You are my greatest reason to smile</p>
+      <a href="#msg-sec" class="hero-cta">
+        <span>The Story</span>
+        <div class="cta-line"></div>
+      </a>
+    </div>
+  </section>
+
+  <section id="msg-sec">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+    <div class="msg-inner reveal">
+      <div class="sec-eyebrow">Chapter I</div>
+      <h2 class="sec-title">You Make My World Smile</h2>
+      <div class="msg-card">
+        <span class="open-quote">“</span>
+        <p class="msg-body" id="read-text">
+          My love, I just want you to know how much you mean to me. You are genuinely the reason I smile. No matter how my day is going, hearing from you, seeing you, or even just thinking about you somehow makes everything feel a little better.<br><br>
+          There’s something about you that brings me a happiness I can’t really explain. You make me feel loved, appreciated, and at peace. I love your smile, your laugh, the way you talk, the little things you do, and honestly, I love just having you in my life.<br><br>
+          I may not always know the perfect words to say it, but I hope you never doubt how much I love and appreciate you. You are not just someone I love — you are someone who has become such a beautiful part of my life.<br><br>
+          Thank you for being you, my love. Thank you for giving me so many reasons to smile. ❤️
+        </p>
+        <span class="close-quote">”</span>
+        <div class="divider">✦</div>
+        
+        <div class="tts-wrap">
+          <button id="tts-btn">
+            <span class="tts-ic">🎙️</span> Listen to my heart
+          </button>
+          <div id="wave">
+            <div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div><div class="wb"></div>
+          </div>
+        </div>
+        
+        <p class="msg-sig">Always & Forever 💕</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="gal-hd reveal">
+      <h2>Moments in Time</h2>
+      <p>Every picture tells our story ✨</p>
+    </div>
+    <div class="photo-grid">
+      <div class="ph seq-reveal" onclick="openLb(this)">
+        <img src="WhatsApp Image 2026-02-21 at 10.35.22 PM.jpeg" alt="Moment" loading="lazy" />
+        <div class="ph-cap"><span>😍 That smile</span></div>
+      </div>
+      <div class="ph seq-reveal" onclick="openLb(this)">
+        <img src="WhatsApp Image 2026-02-21 at 10.35.38 PM.jpeg" alt="Moment" loading="lazy" />
+        <div class="ph-cap"><span>💖 My everything</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="closing">
+    <div class="close-inner reveal">
+      <span class="c-heart">❤️</span>
+      <h2 class="c-title">The End of the Beginning</h2>
+      <p class="c-sub">Here's to a lifetime of smiles, laughter, and a love story that outshines the stars.</p>
+      <p class="c-sig">I love you.</p>
+    </div>
+  </section>
+
+  <div id="mplayer">
+    <button id="pbtn" title="Play / Pause">▶</button>
+    <div class="pmeta">
+      <span class="ptrack">Stay With Me</span>
+      <span class="partist">Sam Smith</span>
+    </div>
+    <div class="eq p" id="eq">
+      <div class="eb"></div><div class="eb"></div><div class="eb"></div><div class="eb"></div><div class="eb"></div>
+    </div>
+  </div>
+
+  <div id="lb">
+    <div id="lb-x" onclick="closeLb()">✕</div>
+    <img id="lb-img" src="" alt="View" />
+  </div>
+
+  <div id="cinematic-overlay">
+    <img id="cinematic-img" src="" alt="Cinematic moment" />
+  </div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
